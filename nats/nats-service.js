@@ -1,5 +1,5 @@
 import { StringCodec } from 'nats';
-import natsConnection from './init';
+import natsConnection from './init.js';
 
 class NatsService{
     constructor(connection){

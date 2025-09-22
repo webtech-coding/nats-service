@@ -1,10 +1,10 @@
 {
   "name": "nats-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "type":"module",
   "scripts": {
-    "start": "nodemon scripts.js"
+    "start": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",

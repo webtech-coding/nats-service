@@ -1,8 +1,10 @@
-const {connect} = require('nats');
+import {connect} from 'nats';
 
-const natsConnection = async ()=>{
-    const NATS_HOST = process.env.NATS_HOST || 'localhost';
-    const url = `http://${NATS_HOST}:4222`
+const natsConnection = async (server, port)=>{
+    const NATS_SERVER = server || 'localhost'
+    const NATS_PORT = port || 4222
+
+    const url = `http://${NATS_SERVER}:${NATS_PORT}`
     return await connect({servers:url});
 }
 

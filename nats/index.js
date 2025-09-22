@@ -1,3 +1,4 @@
-import natsServcice from './nats-service';
+import natsService from './nats-service.js';
+import natsConnection from './init.js';
 
-export default natsServcice;
+export {natsService, natsConnection}
