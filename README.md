@@ -1,6 +1,6 @@
 # Nats Service
 
-![version](https://img.shields.io/badge/version-1.0.5-blue.svg)
+![version](https://img.shields.io/badge/version-1.0.6-blue.svg)
 
 A light weight package for instantiating a NATS service and functionality for connecting, subscribing and publishing nats topics.
 
@@ -15,7 +15,7 @@ npm install nats-service
 ## 🚀 Usage
 
 ```js
-import { natsService, natsConnection } from 'nats-service';
+const { natsService, natsConnection } = require('nats-service');
 
 
 const NATS_SERVER = 'localhost' // default localhost, if not provided
