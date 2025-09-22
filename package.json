@@ -1,0 +1,16 @@
+{
+  "name": "nats-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "start": "nodemon scripts.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nats": "^2.29.3"
+  }
+}
