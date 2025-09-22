@@ -1,6 +1,6 @@
 # Nats Service
 
-![version](https://img.shields.io/badge/version-1.0.3-blue.svg)
+![version](https://img.shields.io/badge/version-1.0.4-blue.svg)
 
 A light weight package for instantiating a NATS service and functionality for connecting, subscribing and publishing nats topics.
 
@@ -18,16 +18,14 @@ npm install nats-service
 import { natsService, natsConnection } from 'nats-serivce';
 
 
-const natsService=()=> {
-    const NATS_SERVER = localhost // default localhost, if not provided
-    const NATS_PORT = 4222 // default 4222, if not provided
+const NATS_SERVER = 'localhost' // default localhost, if not provided
+const NATS_PORT = 4222 // default 4222, if not provided
 
-    natsConnection(NATS_SERVER, NATS_PORT).then(()=>{
-        console.log('NATS connected...')
-    }).catch(error=>{
-        console.error(error)
-    })
-}
+natsConnection(NATS_SERVER, NATS_PORT).then(()=>{
+    console.log('NATS connected...')
+}).catch(error=>{
+    console.error(error)
+})
 
 // register a topic with callback
 // registered callback with be called once the message arrives for the subscribed topic
@@ -36,9 +34,10 @@ natsService.subscribe('product.created', (payload)=>{
     console.log(payload)
 });
 
-
 // publish a nats topic with a payload.
 // the payload should always be a json
-natsService.publish('product.created', {id:123, name:'A new product'});
+natsService.publish('product.created',
+    {id:123, name:'A new product'}
+);
 ```
 
