@@ -1,6 +1,6 @@
 {
   "name": "nats-service",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "type":"module",
   "descriptions":"A light weight package for instantiating a NATS service and functionality for connecting, subscribing and publishing nats topics.",

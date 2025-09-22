@@ -1,6 +1,6 @@
 # Nats Service
 
-![version](https://img.shields.io/badge/version-1.0.1-blue.svg)
+![version](https://img.shields.io/badge/version-1.0.3-blue.svg)
 
 A light weight package for instantiating a NATS service and functionality for connecting, subscribing and publishing nats topics.
 
