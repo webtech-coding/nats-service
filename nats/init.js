@@ -1,4 +1,4 @@
-import {connect} from 'nats';
+const { connect } = require('nats');
 
 const natsConnection = async (server, port)=>{
     const NATS_SERVER = server || 'localhost'
@@ -8,4 +8,4 @@ const natsConnection = async (server, port)=>{
     return await connect({servers:url});
 }
 
-export default natsConnection
+module.exports =  natsConnection

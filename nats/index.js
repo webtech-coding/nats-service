@@ -1,4 +1,4 @@
-import natsService from './nats-service.js';
-import natsConnection from './init.js';
+const natsConnection = require('./init.js');
+const natsService = require('./nats-service.js')
 
-export {natsService, natsConnection}
+module.exports = { natsService, natsConnection }

@@ -1,5 +1,5 @@
-import { StringCodec } from 'nats';
-import natsConnection from './init.js';
+const { StringCodec } = require('nats');
+const natsConnection = require('./init.js');
 
 class NatsService{
     constructor(connection){
@@ -51,4 +51,4 @@ const natsServcice = async ()=>{
     return instance
 }
 
-export default natsServcice
+module.exports = natsServcice

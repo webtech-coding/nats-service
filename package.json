@@ -1,11 +1,10 @@
 {
   "name": "nats-service",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
-  "type":"module",
   "descriptions":"A light weight package for instantiating a NATS service and functionality for connecting, subscribing and publishing nats topics.",
   "scripts": {
-    "start": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon test.js"
   },
   "keywords": [],
   "author": "",
