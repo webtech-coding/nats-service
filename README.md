@@ -5,7 +5,7 @@
 A light weight package for instantiating a NATS service and functionality for connecting, subscribing and publishing nats topics.
 
 ## nats server
-You must have your NATS server running. The default host is localhost:4222. You can provide your own host and port number during ``` natsConnectio ``` initiation
+You must have your NATS server running. The default host is localhost:4222. You can provide your own host and port number during ``` natsConnection ``` initiation
 
 ## 📦 Installation
 

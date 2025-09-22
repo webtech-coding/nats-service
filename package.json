@@ -1,8 +1,9 @@
 {
   "name": "nats-service",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "type":"module",
+  "descriptions":"A light weight package for instantiating a NATS service and functionality for connecting, subscribing and publishing nats topics.",
   "scripts": {
     "start": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +13,9 @@
   "description": "",
   "dependencies": {
     "nats": "^2.29.3"
+  },
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/webtech-coding/nats-service"
   }
 }
